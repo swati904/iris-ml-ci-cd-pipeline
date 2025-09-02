@@ -8,7 +8,7 @@ data=pd.read_csv('data/iris.csv')
 reprocessing
 
 x=data.drop('species', axis=1)
-|y=data['species']
+y=data['species']
 
 #splitting data
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2, random_state=42)
